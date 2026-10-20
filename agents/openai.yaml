@@ -1,0 +1,4 @@
+interface:
+  display_name: "追泰劇學泰文"
+  short_description: "從泰劇字幕學泰文，適合零基礎，附繁中解釋、發音聲調輔助與 Anki 卡片"
+  default_prompt: "使用 $thai-series-vocab 幫我從這集泰劇學泰文；我是完全初學，請用繁體中文解釋並加強發音與聲調輔助。"
