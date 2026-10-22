@@ -48,6 +48,8 @@ git clone https://github.com/phineascarter-arch/thai-series-vocab.git ~/.codex/s
 
 ## 語音與來源限制
 
+之後新集數預設固定使用 **Microsoft Premwadee Neural 泰語女聲**（`th-TH-PremwadeeNeural`），以 MP3 內嵌播放，保留正常／慢速及 iPhone 點按播放流程。來源為 Microsoft 線上語音服務，既有產製工具為第三方 `edge-tts`；不會自行換回 Windows Pattara。
+
 - EP01 頁面已內嵌 47 段 Microsoft Premwadee Neural 泰語女聲 MP3，支援正常與慢速播放；非演員原聲。
 - 學習頁不需要伺服器，影片回看仍需要網路。
 - 收藏與進度儲存在目前瀏覽器，未提供跨裝置同步；可匯出／匯入 JSON 備份。

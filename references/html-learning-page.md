@@ -54,8 +54,15 @@
 
 羅馬拼音使用 SKILL.md 的同一套教學拼寫，資料欄位為 `romanization`；不沿用舊音標值。頁面、搜尋、詳細筆記及 CSV／Markdown 匯出都必須讀取同一欄位，聲調另顯示中文標籤。修改拼音時保留卡片 ID 與既有進度儲存 key。
 
-羅馬拼音使用 SKILL.md 的同一套教學拼寫，資料欄位為 `romanization`；不沿用舊音標值。頁面、搜尋、詳細筆記及 CSV／Markdown 匯出都必須讀取同一欄位，聲調另顯示中文標籤。修改拼音時保留卡片 ID 與既有進度儲存 key。
-
-若提供合成音訊，可用 `audio` 欄位放入 `data:audio/wav;base64,...`，單檔頁面以 HTML audio 播放；正常／慢速按鈕調整 playbackRate。音訊缺席時才用裝置語音，不能把「列出聲音」視為播放成功。保留原生播放器作手動播放退路，顯示實際錯誤。
+已產生的 MP3 用 `audio` 欄位放入 `data:audio/mpeg;base64,...`，單檔頁面以 HTML audio 播放；正常播放 rate 為 1，慢速約 0.71，保留音高。保留原生播放器作手動播放退路，顯示實際錯誤。不能把「列出聲音」視為播放成功。
 
 iPhone 使用情境：播放必須由點按直接觸發，不自動播放；使用標準 HTML audio 與可解碼音訊，提供原生播放控制及正常／慢速。詳細筆記開啟時載入該句音訊，不能讓手動播放器呈現無來源的停用狀態。未使用實體 iPhone 測試時明示限制，不能以桌面通過冒充 iOS 實測。
+
+## 預設語音
+
+- 使用者已選定 **Microsoft Premwadee Neural 泰語女聲**，voice ID 固定為 `th-TH-PremwadeeNeural`，語系 `th-TH`。後續劇集預設沿用；未經使用者要求，不自行換聲音。
+- 使用可用的相同 voice ID 合成來源。既有產製方式是第三方 Python 套件 `edge-tts` 呼叫 Microsoft Edge 線上語音服務；`edge-tts` 是工具，不是聲音供應商，也不是 Microsoft 官方 SDK。不要把這個流程宣稱為已開通或付費使用 Azure API。
+- 工具已可用時，`edge_tts.Communicate(泰文原句, voice="th-TH-PremwadeeNeural", rate="+0%", pitch="+0Hz", volume="+0%").save(MP3路徑)` 產生正常速度音檔。慢速透過播放器 playbackRate 調整，不重複合成。依目前權限取得必要工具，不能沿用其他工作區的絕對路徑。
+- 只將本次選定的泰文學習短句送去合成。每張卡確認 MP3 非空且可解碼，再內嵌；合成失敗可重試，單句最多三次。仍失敗時保留筆記與影片回看並說明缺少音訊，不用假音檔、不暗中換回 Windows Pattara 或其他聲音。未完成音訊時明示限制，不阻擋其他格式交付。
+- 在頁面標示「Microsoft Premwadee Neural 女聲／合成語音，非演員原聲」。已內嵌音檔的頁面播放時不需呼叫線上語音服務或安裝泰文語音。沒有音訊時，若要改用不同聲音，先讓使用者選擇。
+- 原版 EP01 曾用 Windows 內建 Microsoft Pattara 經本機 Windows 語音引擎合成 WAV，現已被使用者選定的 Premwadee Neural MP3 取代。此資訊只用於辨識與避免回退，不能把舊聲音視為預設。
