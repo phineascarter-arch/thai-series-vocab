@@ -48,7 +48,7 @@ git clone https://github.com/phineascarter-arch/thai-series-vocab.git ~/.codex/s
 
 ## 語音與來源限制
 
-- EP01 頁面已內嵌 47 段 Microsoft Pattara 泰文合成音訊，支援正常與慢速播放；非演員原聲。
+- EP01 頁面已內嵌 47 段 Microsoft Premwadee Neural 泰語女聲 MP3，支援正常與慢速播放；非演員原聲。
 - 學習頁不需要伺服器，影片回看仍需要網路。
 - 收藏與進度儲存在目前瀏覽器，未提供跨裝置同步；可匯出／匯入 JSON 備份。
 - 範例使用官方影片的泰文自動字幕，可能有辨識誤差；羅馬拼音 是標準讀音輔助，未逐句核對演員音訊。
