@@ -46,7 +46,7 @@ description: Use when the user wants to learn Thai from a Thai drama episode, as
 
 製作前讀取 [HTML 學習頁流程](references/html-learning-page.md)，以 [可重用頁面範本](assets/learning-page.html) 為起點。範本是 EP01 版型，不是新集數的內容來源；必須依本次真實資料替換劇名、集數、卡數、分段、匯出檔名與儲存識別。
 
-交付 `{劇名slug}-{EPxx}.html`：泰文卡片、繁中意思、逐詞拆解、羅馬拼音／中文聲調、語氣提示、分段回看、搜尋與篩選、收藏／學會進度、隱藏中文自測、隨機複習、五題選擇測驗、深淺色及 CSV／筆記／進度匯出。預設使用 Microsoft Premwadee Neural 泰語女聲（`th-TH-PremwadeeNeural`）產生 MP3，內嵌到 HTML 並透過原生 audio 正常／慢速播放；語音產生方式、iPhone 播放與失敗退路見 [語音設定](references/html-learning-page.md#預設語音)。不要自行換成 Pattara、男聲或其他女聲。明示非演員原聲，無可用泰文語音時提供可理解的提示與影片回看，不用其他語言語音冒充泰文。
+交付 `{劇名slug}-{EPxx}.html`：泰文卡片、繁中意思、逐詞拆解、羅馬拼音／中文聲調、語氣提示、分段回看、搜尋與篩選、收藏／學會進度、隱藏中文自測、隨機複習、五題選擇測驗、深淺色及 CSV／筆記／進度匯出。預設使用 Microsoft Premwadee Neural 泰語女聲（`th-TH-PremwadeeNeural`）產生 MP3，內嵌到 HTML 並透過原生 audio 正常／慢速播放；逐詞拆解中的每個詞塊也提供點按發音，共用去重音檔。另提供「聽音選詞」小遊戲：每輪最多五題、重播、四選一、中文回饋與回原句複習，依目前篩選結果出題，不宣稱為麥克風發音評分。語音產生方式、iPhone 播放與失敗退路見 [語音設定](references/html-learning-page.md#預設語音)。不要自行換成 Pattara、男聲或其他女聲。明示非演員原聲，無可用泰文語音時提供可理解的提示與影片回看，不用其他語言語音冒充泰文。
 
 四段合併時以同一份已查證資料產出 HTML、Markdown 與 CSV，記錄各條分段與時間，去除重複原句。缺段時保留部分整理標示，不能用空卡或假內容補齊。
 

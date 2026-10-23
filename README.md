@@ -8,7 +8,7 @@
 - [下載 Anki CSV](docs/anki-thai-girl-rules-EP01.csv)
 - [閱讀 Markdown 筆記](docs/girl-rules-EP01-notes.md)
 
-`docs/index.html` 是單一檔案，可下載後直接用瀏覽器開啟。包含《Girl Rules》EP01 四段共 47 個精選詞句，支援搜尋、分段、收藏、學會進度、中文自測、五題測驗及資料匯出。
+`docs/index.html` 是單一檔案，可下載後直接用瀏覽器開啟。包含《Girl Rules》EP01 四段共 47 個精選詞句，支援搜尋、分段、收藏、學會進度、中文自測、五題測驗及資料匯出，並提供逐詞點按發音與五題聽音選詞小遊戲。
 
 GitHub Pages 完成部署後，網站連結會顯示於儲存庫的 Deployments 與 Actions 執行結果；尚未成功部署前，不要將預期網址當成已上線網址。
 
@@ -50,7 +50,7 @@ git clone https://github.com/phineascarter-arch/thai-series-vocab.git ~/.codex/s
 
 之後新集數預設固定使用 **Microsoft Premwadee Neural 泰語女聲**（`th-TH-PremwadeeNeural`），以 MP3 內嵌播放，保留正常／慢速及 iPhone 點按播放流程。來源為 Microsoft 線上語音服務，既有產製工具為第三方 `edge-tts`；不會自行換回 Windows Pattara。
 
-- EP01 頁面已內嵌 47 段 Microsoft Premwadee Neural 泰語女聲 MP3，支援正常與慢速播放；非演員原聲。
+- EP01 頁面已內嵌 47 段句子及 104 個去重詞塊的 Microsoft Premwadee Neural 泰語女聲 MP3，支援正常與慢速播放；非演員原聲。
 - 學習頁不需要伺服器，影片回看仍需要網路。
 - 收藏與進度儲存在目前瀏覽器，未提供跨裝置同步；可匯出／匯入 JSON 備份。
 - 範例使用官方影片的泰文自動字幕，可能有辨識誤差；羅馬拼音 是標準讀音輔助，未逐句核對演員音訊。
